@@ -1,25 +1,16 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from "@/components/HelloWorld.vue";
+<script lang="ts" setup>
+    import { reactive } from "vue";
+    import HelloWorld from "@/components/HelloWorld.vue";
 
-export default defineComponent({
-    name: 'App',
+    const x = reactive({ 
+        test: 4
+    });
 
-    components: {
-        HelloWorld
-    },
-
-    data () {
-        return {
-        
-        }
-    }
-})
 </script>
 <template>
     <v-app>
         <v-main>
-            <HelloWorld/>
+            {{x}}
         </v-main>
     </v-app>
 </template>
