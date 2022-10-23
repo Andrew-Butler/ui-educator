@@ -20,7 +20,9 @@
             "@pages/*": ["src/pages/*"],
             "@core/*": ["src/core/*"],
             "@stores/*": ["src/cores/stores/*"],
-            "@mixins/*": ["src/cores/mixins/*"]
+            "@mixins/*": ["src/cores/mixins/*"],
+            "@secure/*": ["src/pages/secure/*"],
+            "@unsecure/*": ["src/pages/unsecure/*"]
         }
     },
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

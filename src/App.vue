@@ -1,16 +1,10 @@
 <script lang="ts" setup>
-    import { reactive } from "vue";
-    import HelloWorld from "@/components/HelloWorld.vue";
-
-    const x = reactive({ 
-        test: 4
-    });
-
+    import Secure from "@secure/App.vue"
 </script>
 <template>
     <v-app>
         <v-main>
-            {{x}}
+            <Secure />
         </v-main>
     </v-app>
 </template>

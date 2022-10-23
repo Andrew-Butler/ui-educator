@@ -1,11 +1,17 @@
 <script setup lang="ts">
-    // TypeScript enabled
-    import { ref } from 'vue'
-
-    const count = ref(1)
+    import Header from "@components/ui/Header.vue";
+    import UserMenu from "@components/ui/menu/UserMenu.vue";
 </script>
 
 <template>
-    <!-- type checking and auto-completion enabled -->
-    {{ count.toFixed(2) }}
+   <v-layout>
+        <Header />
+
+        <div>
+            <UserMenu />
+            <div>
+                <router-view />
+            </div>
+        </div>
+    </v-layout>
 </template>
